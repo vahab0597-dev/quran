@@ -1,6 +1,6 @@
 # Noor-e-Quran
 
-Quran Sharif app (PWA) — Roman English aur Arabic ayat, Urdu/English tarjuma, ruku-wise marking, namaz ke auqat, masnoon duaein aur Tabligh section (chhe sifaat, gasht, muzakare, deen ke faraiz, wuzu, sunnatein).
+Quran Sharif app (PWA) — Roman English aur Arabic ayat, Urdu/English tarjuma, ruku-wise marking, namaz ke auqat, masnoon duaein aur Tabligh section (muzakare ke 14 tafseeli bayan — chhe sifaat, gasht, maghrib ki baat, jamaat ke usool — deen ke faraiz, wuzu, sunnatein).
 
 Live: https://vahab0597-dev.github.io/quran/
 

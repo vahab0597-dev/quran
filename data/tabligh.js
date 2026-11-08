@@ -244,3 +244,15 @@ window.TABLIGH = [
 ]}
 ]}
 ];
+
+/* ---- Merge all muzakare into one section ---- */
+(function(){
+  var T=window.TABLIGH, groups=[["sifaat","Chhe Sifaat","چھ صفات"],["gasht","Gasht","گشت"],["baat","Maghrib ke baad ki baat","مغرب کے بعد کی بات"],["muzakare","Jamaat ke Muzakare","جماعت کے مذاکرے"]];
+  var ch=[];
+  groups.forEach(function(g){var s=T.find(function(x){return x.id===g[0];});if(!s)return;
+    s.ch.forEach(function(c){c.gro=g[1];c.gur=g[2];ch.push(c);});});
+  var merged={id:"muzakare",icon:"✦",ro:"Muzakare",ur:"مذاکرے",
+    sro:"Chhe sifaat, gasht, maghrib ki baat aur jamaat ke muzakare — har ek ka tafseeli bayan",
+    sur:"چھ صفات، گشت، مغرب کی بات اور جماعت کے مذاکرے — ہر ایک کا تفصیلی بیان",ch:ch};
+  window.TABLIGH=[merged].concat(T.filter(function(x){return ["sifaat","gasht","baat","muzakare"].indexOf(x.id)<0;}));
+})();
