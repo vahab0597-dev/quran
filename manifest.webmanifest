@@ -1,0 +1,21 @@
+{
+  "name": "Noor-e-Quran — Quran, Namaz & Duaein",
+  "short_name": "Noor-e-Quran",
+  "description": "Quran Sharif Roman English aur Arabic mein, Urdu/English tarjuma ke saath, ruku marking, namaz ke auqat aur masnoon duaein.",
+  "start_url": "./#quran",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6eedb",
+  "theme_color": "#1f5b44",
+  "lang": "en",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Namaz ke Auqat", "url": "./#namaz", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Duaein", "url": "./#duaein", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]}
+  ]
+}
