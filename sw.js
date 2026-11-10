@@ -1,5 +1,5 @@
 // Noor-e-Quran service worker — offline support
-const VERSION = "noor-v7";
+const VERSION = "noor-v8";
 const CORE = [
   "./", "./index.html", "./manifest.webmanifest",
   "./icons/icon-192.png", "./icons/icon-512.png", "./icons/maskable-512.png", "./icons/apple-touch-icon.png",
@@ -7,7 +7,7 @@ const CORE = [
   "./data/core.js", "./data/duas.js", "./data/duas-ur.js", "./data/cities.js",
   "./data/tabligh.js", "./data/sunnat.js", "./data/faraiz.js",
   "./data/bayan1.js", "./data/bayan2.js", "./data/bayan3.js", "./data/bayan4.js", "./data/bayan5.js",
-  "./data/roman.js", "./data/arabic.js", "./data/ur.js", "./data/en.js"
+  "./data/roman.js", "./data/arabic.js", "./data/ur.js", "./data/ro.js"
 ];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
