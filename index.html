@@ -793,7 +793,7 @@ function decode(s){try{if(!s.startsWith("QR1:"))return null;const o=JSON.parse(a
 /* ================= TABLIGH ================= */
 const TB_SEC_IDS=["muzakare","ambiya","seerat","sahaba","faraiz","wuzu","sunnat"];
 let tbLoad=null,bayanLoad=null,chView="bayan";
-function loadTabligh(){if(!tbLoad)tbLoad=loadData("tabligh").then(()=>loadData("sunnat")).then(()=>loadData("faraiz")).then(()=>loadData("ambiya1")).then(()=>loadData("ambiya2")).then(()=>loadData("ambiya3")).then(()=>loadData("ambiya4")).then(()=>loadData("ambiya5")).then(()=>loadData("ambiya6")).then(()=>loadData("ambiya7")).then(()=>loadData("ambiya8")).then(()=>loadData("seerat1")).then(()=>loadData("seerat2")).then(()=>loadData("sahaba1")).then(()=>loadData("sahaba2")).then(()=>loadData("sahaba3")).then(()=>loadData("sahaba4")).catch(e=>{tbLoad=null;throw e;});return tbLoad;}
+function loadTabligh(){if(!tbLoad)tbLoad=loadData("tabligh").then(()=>loadData("sunnat")).then(()=>loadData("faraiz")).then(()=>loadData("ambiya1")).then(()=>loadData("ambiya2")).then(()=>loadData("ambiya3")).then(()=>loadData("ambiya4")).then(()=>loadData("ambiya5")).then(()=>loadData("ambiya6")).then(()=>loadData("ambiya7")).then(()=>loadData("ambiya8")).then(()=>loadData("seerat1")).then(()=>loadData("seerat2")).then(()=>loadData("sahaba1")).then(()=>loadData("sahaba2")).then(()=>loadData("sahaba3")).then(()=>loadData("sahaba4")).then(()=>loadData("sahaba5")).catch(e=>{tbLoad=null;throw e;});return tbLoad;}
 function loadBayan(){if(!bayanLoad)bayanLoad=Promise.all(["bayan1","bayan2","bayan3","bayan4"].map(loadData)).then(()=>loadData("bayan5")).catch(e=>{bayanLoad=null;throw e;});return bayanLoad;}
 const L=o=>UR()?o.ur:o.ro;
 function tbText(ro,ur){return UR()?ur:ro;}
