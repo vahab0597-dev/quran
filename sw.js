@@ -1,11 +1,11 @@
 // Noor-e-Quran service worker — offline support
-const VERSION = "noor-v8";
+const VERSION = "noor-v9";
 const CORE = [
   "./", "./index.html", "./manifest.webmanifest",
   "./icons/icon-192.png", "./icons/icon-512.png", "./icons/maskable-512.png", "./icons/apple-touch-icon.png",
   "./lib/adhan.umd.min.js",
   "./data/core.js", "./data/duas.js", "./data/duas-ur.js", "./data/cities.js",
-  "./data/tabligh.js", "./data/sunnat.js", "./data/faraiz.js",
+  "./data/tabligh.js", "./data/sunnat.js", "./data/faraiz.js", "./data/ambiya1.js",
   "./data/bayan1.js", "./data/bayan2.js", "./data/bayan3.js", "./data/bayan4.js", "./data/bayan5.js",
   "./data/roman.js", "./data/arabic.js", "./data/ur.js", "./data/ro.js"
 ];
