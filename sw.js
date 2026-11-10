@@ -1,11 +1,11 @@
 // Noor-e-Quran service worker — offline support
-const VERSION = "noor-v15";
+const VERSION = "noor-v16";
 const CORE = [
   "./", "./index.html", "./manifest.webmanifest",
   "./icons/icon-192.png", "./icons/icon-512.png", "./icons/maskable-512.png", "./icons/apple-touch-icon.png",
   "./lib/adhan.umd.min.js",
   "./data/core.js", "./data/duas.js", "./data/duas-ur.js", "./data/cities.js",
-  "./data/tabligh.js", "./data/sunnat.js", "./data/faraiz.js", "./data/ambiya1.js", "./data/ambiya2.js", "./data/ambiya3.js", "./data/ambiya4.js", "./data/ambiya5.js", "./data/ambiya6.js", "./data/ambiya7.js", "./data/ambiya8.js", "./data/seerat1.js", "./data/seerat2.js", "./data/sahaba1.js",
+  "./data/tabligh.js", "./data/sunnat.js", "./data/faraiz.js", "./data/ambiya1.js", "./data/ambiya2.js", "./data/ambiya3.js", "./data/ambiya4.js", "./data/ambiya5.js", "./data/ambiya6.js", "./data/ambiya7.js", "./data/ambiya8.js", "./data/seerat1.js", "./data/seerat2.js", "./data/sahaba1.js", "./data/sahaba2.js",
   "./data/bayan1.js", "./data/bayan2.js", "./data/bayan3.js", "./data/bayan4.js", "./data/bayan5.js",
   "./data/roman.js", "./data/arabic.js", "./data/ur.js", "./data/ro.js"
 ];
